@@ -51,7 +51,7 @@ DATABASES = {
     # DATABASE_URL=postgres://user:password@hostname_or_ip:port/database_name
     "default": env.db(
         "DATABASE_URL",
-        default="postgres:///gamifyme",
+        default="postgres://gamify_admin:root@localhost:5432/gamifyme",
     )
 }
 DATABASES["default"]["ATOMIC_REQUESTS"] = True
